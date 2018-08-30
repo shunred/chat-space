@@ -1,4 +1,60 @@
-# README
+## membersテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
+
+### Association
+- belongs_to :group
+- belongs_to :user
+- has_many :messages
+
+
+## messagesテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|body|text|null: false|
+|image|string|
+|member_id|integer|null: false, foreign_key: true|
+
+### Association
+- belongs_to :group, through: members
+- belongs_to :user, through: members
+- belongs_to :members
+
+
+## usersテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|email|string|null: false|
+|password|string|null: false|
+
+### Association
+- has_many :members
+- has_many :messages, through: members
+- has_many :groups, through: members
+
+
+## groupsテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|group_name|string|null: false|
+
+### Association
+- has_many :members
+- has_many  :messages, through: members
+- has_many  :groups, through: members
+
+
+
+
+
+<!-- # README
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
@@ -22,3 +78,4 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+ -->
