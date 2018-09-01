@@ -1,15 +1,17 @@
 %div.left-content
-	%div.left__user
-		%p seo
-	%div.left__group
-		%p.left__group-name sample
-		%p.left__group-member Good bye world
+	%div.current-user
+		%p.current-user__name seo
+	%div.current-user-groups
+		%div.current-user-group
+			%p.group__name sample
+			%p.group__member Good bye world
 
 
 %div.right-content
-	%div.right__group
-		%h3.right__group-name sample
-		%p.right__group-menbers seo neko
-	%div.right__messages
-		%h5.right__message-user-name seo
-		%p.right__message  Good bye world
+	%div.current-group
+		%h3.current-group__name sample
+		%p.current-group__menbers seo neko
+	%div.current-group__messages
+		%div.current-group__message
+			%h5.message__user-name seo
+			%p.message__text  Good bye world
