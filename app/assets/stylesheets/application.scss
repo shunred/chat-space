@@ -42,6 +42,19 @@
 			height: calc(100vh - 15%);
 			padding: 0 20px;
 			background-color: #2f3e51;
+
+			.chat-side__group-contenr {
+				padding: 20px 0;
+
+				.group__name{
+					font-size: 15px;
+					margin-bottom: 5px;
+				}
+
+				.group__member{
+					font-size: 11px;
+				}
+			}
 		}
 
 
