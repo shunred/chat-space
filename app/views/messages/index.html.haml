@@ -44,7 +44,7 @@
 		%div.chat-main__input
 			%div.chat-main__input-area
 				%form.chat-main__input-form
-					%input.chat-main__input-form-box
+					%input{:placeholder => "Type a message", :class => "chat-main__input-form-box"}
 					%label.upload-label{for: "upload-icon"}
 						%i.far.fa-image
 					%input{:type => "submit", :value => "Send", :class => "chat-main__input-form-button"}
