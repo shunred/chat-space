@@ -148,8 +148,8 @@
           font-size: 14px;
           font-weight: bold;
         }
-	  }
-	}
+      }
+    }
 
     .chat-main__input {
       width: calc(100% - 80px);
@@ -159,16 +159,16 @@
 
       .chat-main__input-area {
         .chat-main__input-form-box {
-      	  width: calc(100% - 152px);
-      	  height: 50px;
-      	  padding: 0 10px;
-      	  font-size: 16px;
-      	  box-sizing: border-box;
-      	  border: none;
-      	  color: #434A54;
-      	  float: left;
-      	  display: block;
-      	}
+          width: calc(100% - 152px);
+          height: 50px;
+          padding: 0 10px;
+          font-size: 16px;
+          box-sizing: border-box;
+          border: none;
+          color: #434A54;
+          float: left;
+          display: block;
+        }
 
       	  .fa-image {
       	    height: 50px;
@@ -187,7 +187,7 @@
 		  background-color: $accent-color;
 		  float: right;
 		}
-      }
-    }
+	  }
+	}
   }
 }
