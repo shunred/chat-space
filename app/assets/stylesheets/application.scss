@@ -30,29 +30,29 @@
       bottom: 0;
       margin: auto;
 
-	  .chat-side__user-name {
-	    font-size: 16px;
-	    font-weight: bold;
-	    display: inline-block;
+      .chat-side__user-name {
+      	font-size: 16px;
+      	font-weight: bold;
+      	display: inline-block;
 	  }
 
 	  .chat-side__user-group-setting {
 	    float: right;
 
-        &:visited {
-          color: $white-color;
-        }
-      }
+	    &:visited {
+	      color: $white-color;
+	    }
+	  }
 
-      .chat-side__user-setting {
-        float: right;
-        margin-left: 10px;
+	  .chat-side__user-setting {
+	    float: right;
+	    margin-left: 10px;
 
-        &:visited {
-          color: $white-color;
-        }
-      }
-    }
+	    &:visited {
+	      color: $white-color;
+	    }
+	  }
+	}
   }
 
   .chat-side__group-lists {
@@ -113,41 +113,40 @@
         padding: 10px 20px;
         text-decoration: none;
 
-      	&:visited {
-      	  color:  $accent-color;
-		}
-	  }
+        &:visited {
+          color:  $accent-color;
+        }
+      }
     }
   }
 
   .chat-main__contents {
-
     .chat-main__messages{
       height: calc(100vh - 100px - 90px);
       padding: 0px 40px;
       background-color: #FAFAFA;
       overflow: scroll;
 
-	  .chat-main__message {
-	    padding-top: 6px;
+      .chat-main__message {
+        padding-top: 6px;
 
-	    .message__user-name {
-	      padding: 40px 0px 10px 0px;
-	      color: #434A54;
-	      font-size: 16px;
-	      font-weight: bold;
+        .message__user-name {
+          padding: 40px 0px 10px 0px;
+          color: #434A54;
+          font-size: 16px;
+          font-weight: bold;
 
-	      .message__date {
-	        margin-left: 10px;
-	        color: #999999;
-	        font-size: 12px;
-		  }
-		}
+          .message__date {
+            margin-left: 10px;
+            color: #999999;
+            font-size: 12px;
+          }
+        }
 
-		.message__text {
-		  color: #434A54;
-		  font-size: 14px;
-		  font-weight: bold;
+        .message__text {
+          color: #434A54;
+          font-size: 14px;
+          font-weight: bold;
         }
 	  }
 	}
@@ -159,7 +158,6 @@
       padding: 20px 40px;
 
       .chat-main__input-area {
-
       	.chat-main__input-form-box {
       	  width: calc(100% - 152px);
       	  height: 50px;
@@ -188,7 +186,7 @@
 		  color: $white-color;
 		  background-color: $accent-color;
 		  float: right;
-        }
+		}
       }
     }
   }
