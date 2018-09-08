@@ -37,7 +37,7 @@
 				}
 
 				.chat-side__user-group-setting {
-					margin-left: 170px;
+					float: right;
 				
 					&:visited {
 						color: $white-color;
@@ -46,6 +46,7 @@
 				}
 
 				.chat-side__user-setting {
+					float: right;
 					margin-left: 10px;
 
 					&:visited {
