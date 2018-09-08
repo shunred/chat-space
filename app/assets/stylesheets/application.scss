@@ -109,9 +109,9 @@
       float: right;
 
       .chat-main__group-button-edit {
-      	line-height: 36px;
-      	padding: 10px 20px;
-      	text-decoration: none;
+        line-height: 36px;
+        padding: 10px 20px;
+        text-decoration: none;
 
       	&:visited {
       	  color:  $accent-color;
@@ -123,10 +123,10 @@
   .chat-main__contents {
 
     .chat-main__messages{
-	  height: calc(100vh - 100px - 90px);
-	  padding: 0px 40px;
-	  background-color: #FAFAFA;
-	  overflow: scroll;
+      height: calc(100vh - 100px - 90px);
+      padding: 0px 40px;
+      background-color: #FAFAFA;
+      overflow: scroll;
 
 	  .chat-main__message {
 	    padding-top: 6px;
