@@ -170,24 +170,24 @@
           display: block;
         }
 
-      	  .fa-image {
-      	    height: 50px;
-      	    line-height: 50px;
-      	    padding: 0 10px;
-      	    background-color: white;
-      	    float: left;
-		  }
+          .fa-image {
+            height: 50px;
+            line-height: 50px;
+            padding: 0 10px;
+            background-color: white;
+            float: left;
+          }
 
-		.chat-main__input-form-button {
-		  height: 50px;
-		  padding: 0 30px;
-		  margin-left: 15px;
-		  border: none;
-		  color: $white-color;
-		  background-color: $accent-color;
-		  float: right;
-		}
-	  }
-	}
+        .chat-main__input-form-button {
+          height: 50px;
+          padding: 0 30px;
+          margin-left: 15px;
+          border: none;
+          color: $white-color;
+          background-color: $accent-color;
+          float: right;
+        }
+      }
+    }
   }
 }
