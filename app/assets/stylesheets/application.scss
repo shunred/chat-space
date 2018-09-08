@@ -31,9 +31,9 @@
       margin: auto;
 
       .chat-side__user-name {
-      	font-size: 16px;
-      	font-weight: bold;
-      	display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+        display: inline-block;
 	  }
 
 	  .chat-side__user-group-setting {
@@ -89,7 +89,7 @@
     .chat-main__group-content {
       float: left;
 
-      .chat-main__group-name{
+      .chat-main__group-name {
         margin: 35px 0 15px 0;
         font-size: 20px;
         color: #333333;
@@ -158,7 +158,7 @@
       padding: 20px 40px;
 
       .chat-main__input-area {
-      	.chat-main__input-form-box {
+        .chat-main__input-form-box {
       	  width: calc(100% - 152px);
       	  height: 50px;
       	  padding: 0 10px;
