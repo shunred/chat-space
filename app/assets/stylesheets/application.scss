@@ -1,17 +1,18 @@
 @import "./reset";
+@import "./variable";
 	
 	.notification {
 		width: 100%;
 		height: 30px;
 		line-height: 30px;
 		text-align: center;
-		color: white;
-		background-color: #38AEF0;
+		color: $white-color;
+		background-color: $accent-color;
 	}
 
 	.chat-side {
 		width: 300px;
-		color: #FFFFFF;
+		color: $white-color;
 		float: left;
 
 	    .chat-side__user {
@@ -21,8 +22,8 @@
 			position: relative;
 
 			.chat-side__user-content {
-				height: 50px;
 				width: 260px;
+				height: 50px;
 				line-height: 50px;
 				position: absolute;
 				top: 0;
@@ -36,12 +37,23 @@
 				}
 
 				.chat-side__user-group-setting {
-					margin-left: 170px
+					margin-left: 170px;
+				
+					&:visited {
+						color: $white-color;
+					}
+
 				}
 
 				.chat-side__user-setting {
-					margin-left: 10px
+					margin-left: 10px;
+
+					&:visited {
+						color: $white-color;
+					}
 				}
+
+
 		
 			}
 		}
@@ -82,9 +94,9 @@
 				float: left;
 
 				.chat-main__group-name{
+					margin: 35px 0 15px 0;
 					font-size: 20px;
 					color: #333333;
-					margin: 35px 0 15px 0;
 				}
 
 				.chat-main__group-members {
@@ -95,14 +107,19 @@
 
 			.chat-main__group-button {
 				height: 38px;
-				color:  #38AEF0;
-				border: solid 1px #38AEF0;
 				margin-top: 28px;
+				color:  $accent-color;
+				border: solid 1px $accent-color;
 				float: right;
 
 				.chat-main__group-button-edit {
-					padding: 10px 20px;
 					line-height: 36px;
+					padding: 10px 20px;
+					text-decoration: none;
+
+					&:visited {
+						color:  $accent-color;
+					}
 				}
 			}
 		}
@@ -111,8 +128,8 @@
 			
 
 			.chat-main__messages{
-				padding: 0px 40px;
 				height: calc(100vh - 100px - 90px);
+				padding: 0px 40px;
 				background-color: #FAFAFA;
 				overflow: scroll;
 
@@ -141,20 +158,20 @@
 			}
 
 			.chat-main__input {
-				background-color: #AAAAAA;
+				width: calc(100% - 80px);
 			 	height: 50px;
-			    width: calc(100% - 80px);
+				background-color: #AAAAAA;
 			    padding: 20px 40px;
 
 			    .chat-main__input-area {
 
 			    	.chat-main__input-form-box {
+			    		width: calc(100% - 152px);
 			    		height: 50px;
 			    		padding: 0 10px;
 				    	font-size: 16px;
 				    	box-sizing: border-box;
 				    	border: none;
-				    	width: calc(100% - 176px);
 				    	color: #434A54;
 				    	float: left;
 				    	display: block;
@@ -162,10 +179,10 @@
 
 			    	.fa-image {
 			    		height: 50px;
-			    		padding: 0 10px;
-			    		float: left;
-			    		background-color: white;
 			    		line-height: 50px;
+			    		padding: 0 10px;
+			    		background-color: white;
+			    		float: left;
 			    	}
 
 			    	.chat-main__input-form-button {
@@ -173,8 +190,8 @@
 			    		padding: 0 30px;
 			    		margin-left: 15px;
 			    		border: none;
-			    		color: white;
-			    		background-color: #38AEF0;
+			    		color: $white-color;
+			    		background-color: $accent-color;
 			    		float: right;
 			    	}
 			    }
