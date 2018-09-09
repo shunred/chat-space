@@ -37,7 +37,7 @@
 	    float: right;
 
 	    &:visited {
-	      color: $white-color;
+	      color: $white;
 	    }
 	  }
 
@@ -46,7 +46,7 @@
 	    margin-left: 10px;
 
 	    &:visited {
-	      color: $white-color;
+	      color: $white;
 	    }
 	  }
 	}
@@ -101,8 +101,8 @@
     .chat-main__group-button {
       height: 38px;
       margin-top: 28px;
-      color:  $accent-color;
-      border: solid 1px $accent-color;
+      color:  $light_blue;
+      border: solid 1px $light_blue;
       float: right;
 
       .chat-main__group-button-edit {
@@ -111,7 +111,7 @@
         text-decoration: none;
 
         &:visited {
-          color:  $accent-color;
+          color:  $light_blue;
         }
       }
     }
