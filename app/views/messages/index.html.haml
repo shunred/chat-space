@@ -6,7 +6,7 @@
       %p.chat-side__user-name aaaaaaaaaa
       %a{:href => "/", :class => "chat-side__user-setting"}
         %i.fas.fa-cog
-      %a{:href => "/", :class => "chat-side__user-group-setting"}
+      = link_to new_group_path, :class => "chat-side__user-group-setting" do
         %i.fas.fa-edit
   %div.chat-side__group-lists
     %div.chat-side__group-contenr
