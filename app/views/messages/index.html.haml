@@ -1,20 +1,19 @@
-/ %div.notification
-/   %p チャットグループが作成されました。
-%div.chat-side
-  %div.chat-side__user
-    %div.chat-side__user-content
-      %p.chat-side__user-name aaaaaaaaaa
-      %a{:href => "/", :class => "chat-side__user-setting"}
-        %i.fas.fa-cog
-      = link_to new_group_path, class: 'chat-side__user-group-setting' do
-        %i.fas.fa-edit
-  %div.chat-side__group-lists
-    %div.chat-side__group-contenr
-      %p.group__name sample
-      %p.group_member Hello world
-    %div.chat-side__group-contenr
-      %p.group__name sample2
-      %p.group__member Good bye world
+= render 'shared/side_bar'
+/ %div.chat-side
+/   %div.chat-side__user
+/     %div.chat-side__user-content
+/       %p.chat-side__user-name aaaaaaaaaa
+/       %a{:href => "/", :class => "chat-side__user-setting"}
+/         %i.fas.fa-cog
+/       = link_to new_group_path, class: 'chat-side__user-group-setting' do
+/         %i.fas.fa-edit
+/   %div.chat-side__group-lists
+/     %div.chat-side__group-contenr
+/       %p.group__name sample
+/       %p.group_member Hello world
+/     %div.chat-side__group-contenr
+/       %p.group__name sample2
+/       %p.group__member Good bye world
 
 %div.chat-main
   %div.chat-main__group
