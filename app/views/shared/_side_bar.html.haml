@@ -1,8 +1,9 @@
 %div.chat-side
   %div.chat-side__user
     %div.chat-side__user-content
-      %p.chat-side__user-name aaaaaaaaaa
-      %a{:href => "/", :class => "chat-side__user-setting"}
+      %p.chat-side__user-name
+        = current_user.name
+      = link_to new_group_path, class: 'chat-side__user-setting' do
         %i.fas.fa-cog
       = link_to new_group_path, class: 'chat-side__user-group-setting' do
         %i.fas.fa-edit
