@@ -1,0 +1,8 @@
+%div.chat-main__input
+  %div.chat-main__input-area
+    = form_for [@group, @message] do |f|
+      = f.text_field :body, class: 'chat-main__input-form-box', placeholder: 'Type a messag'
+      = f.label :image, class: 'upload-label' do
+        = fa_icon 'picture-o', class: 'icon'
+        = f.file_field :image, class: 'hidden'
+      = f.submit 'Send', class: 'chat-main__input-form-button'

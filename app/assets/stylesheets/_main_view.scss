@@ -167,12 +167,18 @@
           display: block;
         }
 
+
+
           .fa-image {
             height: 50px;
             line-height: 50px;
             padding: 0 10px;
             background-color: $white;
             float: left;
+          }
+
+          .hidden {
+            display: none;
           }
 
         .chat-main__input-form-button {

@@ -1,50 +1,16 @@
 = render 'shared/side_bar'
-/ %div.chat-side
-/   %div.chat-side__user
-/     %div.chat-side__user-content
-/       %p.chat-side__user-name aaaaaaaaaa
-/       %a{:href => "/", :class => "chat-side__user-setting"}
-/         %i.fas.fa-cog
-/       = link_to new_group_path, class: 'chat-side__user-group-setting' do
-/         %i.fas.fa-edit
-/   %div.chat-side__group-lists
-/     %div.chat-side__group-contenr
-/       %p.group__name sample
-/       %p.group_member Hello world
-/     %div.chat-side__group-contenr
-/       %p.group__name sample2
-/       %p.group__member Good bye world
 
 %div.chat-main
   %div.chat-main__group
     %div.chat-main__group-content
-      %h3.chat-main__group-name sample
-      %p.chat-main__group-members aaaaaa   bbbbbbbb
+      %h3.chat-main__group-name
+        = @group.name
+      %p.chat-main__group-members
+        - @group.users.each do |user|
+          %span=user.name
     %div.chat-main__group-button
       %a{:href => "/", :class => "chat-main__group-button-edit"}Edit
   %div.chat-main__contents
     %div.chat-main__messages
-      %div.chat-main__message
-        %h5.message__user-name
-          aaaaa
-          %span.message__date 2016/10/06 10:35:09
-        %p.message__text  Hello world
-      %div.chat-main__message
-        %h5.message__user-name
-          bbbbbbbbb
-          %span.message__date 2016/10/02 06:27:07
-        %p.message__text  Good bye world
-      %div.chat-main__message
-        %h5.message__user-name
-          aaaaa
-          %span.message__date 2016/10/01 02:21:12
-        %p.message__text  See you!
-
-    %div.chat-main__input
-      %div.chat-main__input-area
-        = form_for [@group, @message] do |f|
-          = f.text_field :body, class: 'chat-main__input-form-box', placeholder: 'Type a messag'
-          = f.label :image, class: 'upload-label' do
-            %i.far.fa-image
-            = f.file_field :image, class: 'hidden'
-          = f.submit 'Send', class: 'chat-main__input-form-button'
+      = render @messages
+    = render 'form'
