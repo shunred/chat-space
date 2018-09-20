@@ -43,5 +43,5 @@
 |------|----|-------|
 |body|text|null: false|
 |image|string|
-|member_id|references|null: false, foreign_key: true|
-
+|user_id|references|null: false, foreign_key: true|
+|group_id|references|null: false, foreign_key: true|
