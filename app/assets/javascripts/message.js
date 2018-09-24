@@ -2,7 +2,7 @@ $(function(){
 
   function buildHTML(message){
 
-    if (!message.image) {
+    var image = message.image ? `<img class="lower-message__image" src=${ message.image }>` : "";
 
     var html = `<div class="chat-main__message">
                   <h5 class="message__user-name">
@@ -10,20 +10,9 @@ $(function(){
                     <span class="message__date">${message.created_at}</span>
                   </h5>
                   <p class="message__text">${message.body}</p>
-                  <img class="lower-message__image" src="/uploads/message/image/${ message.id }/${message.image}">
+                  ${image}
                </div>`
     return html;
-   }else {
-    var html = `<div class="chat-main__message">
-                 <h5 class="message__user-name">
-                  ${message.user_name}
-                  <span class="message__date">${message.created_at}</span>
-                 </h5>
-                 <p class="message__text">${message.body}</p>
-               </div>`
-      return html;
-   }
-
   }
 
   $('.new_message').on('submit', function(e){
@@ -43,6 +32,8 @@ $(function(){
       var html = buildHTML(data);
       $('.chat-main__messages').append(html)
       $('.chat-main__input-form-box').val('')
+      $('.hidden').val('')
+      $('.new_message').prop('disabled', false);
     })
     .fail(function() {
       alert('error');
