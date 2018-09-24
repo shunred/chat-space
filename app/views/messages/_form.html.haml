@@ -3,6 +3,6 @@
     = form_for [@group, @message] do |f|
       = f.text_field :body, class: 'chat-main__input-form-box', placeholder: 'Type a message'
       = f.label :image, class: 'upload-label' do
-        %i.far.fa-image
+        = fa_icon 'picture-o', class: 'icon'
         = f.file_field :image, class: 'hidden'
       = f.submit 'Send', class: 'submit'

@@ -7,7 +7,7 @@ $(function(){
     var html = `<div class="chat-main__message">
                   <h5 class="message__user-name">
                     ${message.user_name}
-                    <span class="message__date">${message.created_at}</span>
+                    <span class="message__date">${message.datetime}</span>
                   </h5>
                   <p class="message__text">${message.body}</p>
                   ${image}
