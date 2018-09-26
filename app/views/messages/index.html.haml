@@ -9,7 +9,7 @@
         - @group.users.each do |user|
           %span=user.name
     %div.chat-main__group-button
-      %a{:href => "/", :class => "chat-main__group-button-edit"}Edit
+      = link_to "Edit", edit_group_path(@group), class: "chat-main__group-button-edit"
   %div.chat-main__contents
     %div.chat-main__messages
       = render @messages
