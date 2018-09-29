@@ -52,7 +52,7 @@ $(function(){
     .fail(function(){
       alert('ユーザー検索に失敗しました')
     });
-  })
+  });
 
   $(document).on("click", ".chat-group-user__btn--add", function(){
       var user_id = $(this).attr('data-user-id');
@@ -61,7 +61,7 @@ $(function(){
       $(this).parent().remove();
     });
 
-    $(document).on("click", ".user-search-remove", function(){
+  $(document).on("click", ".user-search-remove", function(){
       $(this).parent().remove();
-    });
+  });
 });
