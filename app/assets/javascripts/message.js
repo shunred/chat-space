@@ -62,15 +62,12 @@ $(function(){
       $.ajax({
         url: location.href,
         type: 'GET',
-        data: {
-          message: { id: last_id}
-        },
+        data: { id: last_id },
         dataType: 'json'
       })
       .done(function(messages){
         var insertHTML = '';
         messages.forEach(function(message){
-          console.log(message);
           insertHTML += buildHTML(message);
           $('.chat-main__messages').append(insertHTML);
         });
