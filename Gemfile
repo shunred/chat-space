@@ -58,6 +58,10 @@ group :development, :test do
   gem 'pry-doc'
 end
 
+group :production do
+  gem 'unicorn'
+end
+
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
