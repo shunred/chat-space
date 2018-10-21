@@ -26,6 +26,7 @@
 
 	  .chat-side__user-group-setting {
 	    float: right;
+      color: $white;
 
 	    &:visited {
 	      color: $white;
@@ -35,6 +36,7 @@
 	  .chat-side__user-setting {
 	    float: right;
 	    margin-left: 10px;
+      color: $white;
 
 	    &:visited {
 	      color: $white;
@@ -108,6 +110,7 @@
       .chat-main__group-button-edit {
         line-height: 36px;
         padding: 10px 20px;
+        color:  $light_blue;
         text-decoration: none;
 
         &:visited {
