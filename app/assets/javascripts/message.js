@@ -36,8 +36,11 @@ $(document).on("turbolinks:load", function(){
       })
       //非同期通信成功https://www.google.co.jp/の場合
       .done(function(data){
-        var html = buildHTML(data);
-        $('.chat-main__messages').append(html)
+        console.log(data);
+        if(data.body){
+          var html = buildHTML(data);
+          $('.chat-main__messages').append(html)
+        };
         $('.chat-main__input-form-box').val('')
         $('.hidden').val('')
         scroll();
@@ -50,13 +53,13 @@ $(document).on("turbolinks:load", function(){
       .always(function(){
         $('.submit').prop("disabled", false);
       });
-    })
+    });
 
     $(function(){
         setInterval(update, 3000);
     });
 
-    //自動更新機能
+    // 自動更新機能
     function update(){
       if(window.location.href.match(/\/groups\/\d+\/messages/)) {
         var last_id = $('.chat-main__message:last').data('messageId');
